@@ -29,6 +29,25 @@ const linkAction = () => {
 navLink.forEach((n) => n.addEventListener('click', linkAction));
 
 /*==================== ACCORDION SKILLS ====================*/
+const skillsContent = document.getElementsByClassName("skills__content");
+const skillsHeader = document.querySelectorAll('.skills__header');
+
+
+skillsHeader.forEach(el => {
+  el.addEventListener('click', (e) => {
+    let itemClass = e.currentTarget.parentNode.className;
+
+    for (let i = 0; i < skillsContent.length; i++) {
+      skillsContent[i].className = 'skills__content skills__close'
+    }
+
+    if (itemClass === 'skills__content skills__close') {
+      e.currentTarget.parentNode.className = 'skills__content skills__open';
+    }
+
+  });
+});
+
 
 /*==================== QUALIFICATION TABS ====================*/
 
