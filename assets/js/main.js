@@ -90,6 +90,17 @@ modalClose.forEach((modalClose) => {
 });
 
 /*==================== PORTFOLIO SWIPER  ====================*/
+var swiper = new Swiper(".portfolio__container", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop: true,
+});
 
 /*==================== TESTIMONIAL ====================*/
 

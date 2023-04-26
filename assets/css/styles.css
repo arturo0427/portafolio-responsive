@@ -599,13 +599,13 @@ img {
   font-weight: var(--font-medium);
 }
 
-.experience__modal-subtitle{
+.experience__modal-subtitle {
   font-size: var(--small-font-size);
   color: var(--text-color);
   font-weight: var(--font-medium);
 }
 
-.experience__modal-description{
+.experience__modal-description {
   margin-bottom: var(--mb-2);
 }
 
@@ -674,7 +674,71 @@ img {
 
 /*==================== PORTFOLIO ====================*/
 
-/*==================== PROJECT IN MIND ====================*/
+.portfolio__container {
+  overflow: initial;
+}
+
+.portfolio__content {
+  padding: 0 1.5rem;
+}
+
+.portfolio__img {
+  width: 265px;
+  border-radius: 0.5rem;
+  justify-self: center;
+  box-shadow: 0.35rem 0.30rem 0.4rem rgba(0, 0, 0, 0.15);
+}
+
+.portfolio__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description {
+  margin-bottom: var(--mb-0-75);
+}
+
+/*  */
+.portfolio__button:hover .button__icon {
+  transform: translate(0.25rem);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -0.6rem;
+}
+
+.swiper-button-next {
+  right: -0.6rem;
+}
+
+.swiper-pagination-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: -2.8rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination-bullets {
+  outline: none;
+}
+
 
 /*==================== TESTIMONIAL ====================*/
 
