@@ -66,7 +66,28 @@ tabs.forEach((tab) => {
   });
 });
 
-/*==================== SERVICES MODAL ====================*/
+/*==================== EXPERIENCE MODAL ====================*/
+const modalView = document.querySelectorAll(".experience__modal");
+const modalBtns = document.querySelectorAll(".experience__button");
+const modalClose = document.querySelectorAll(".experience__modal-close");
+
+let modal = (modalCLick) => {
+  modalView[modalCLick].classList.add("active-modal");
+};
+
+modalBtns.forEach((modalBtn, i) => {
+  modalBtn.addEventListener("click", () => {
+    modal(i);
+  });
+});
+
+modalClose.forEach((modalClose) => {
+  modalClose.addEventListener("click", () => {
+    modalView.forEach((modalView) => {
+      modalView.classList.remove("active-modal");
+    });
+  });
+});
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 
