@@ -113,6 +113,8 @@ body.dark-theme {
 
 html {
   scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 body {
@@ -591,7 +593,7 @@ img {
   transform: translate(6px, -7px);
 }
 
-.qualification [data-content] {
+.qualification__content {
   display: none;
 }
 
