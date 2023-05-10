@@ -179,3 +179,19 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+
+// ----------------- TEXTO MAQUINA ----------------------
+const texto = "Hola, soy Arturo";
+let i = 0;
+
+function escribirTexto() {
+  if (i < texto.length) {
+    document.getElementById("texto-maquina").textContent += texto.charAt(i);
+    i++;
+    setTimeout(escribirTexto, 100);
+  }
+}
+
+escribirTexto();
