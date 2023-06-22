@@ -667,16 +667,40 @@
         <div class="portfolio__container container swiper">
           <div class="swiper-wrapper">
             <!--==================== PORTFOLIO 1 ====================-->
+
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="assets/img/portafolio/Social-proof-section.jpg"
+                src="assets/img/portafolio/clockJS.png"
+                alt="Order summary card"
+                class="portfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Reloj Análogo</h3>
+                <p class="portfolio__description">
+                  Reloj análogo realizado con la librería de ReactJS.
+                </p>
+                <a
+                  href="https://arturo0427.github.io/clockJS/"
+                  class="button button--flex-button--small portfolio__button"
+                  target="_blank"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 2 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/portafolio/drumKit.png"
                 alt="Social-proof-section"
                 class="portfolio__img"
               />
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Social proof section</h3>
+                <h3 class="portfolio__title">Batería</h3>
                 <p class="portfolio__description">
-                  Diseño adaptable para cualquier tipo de dispositivo
+                  Batería React, aplicando
+                  hooks para manejo de su estado.
                 </p>
                 <a
                   href="https://arturo0427.github.io/Social-proof-section/"
@@ -688,29 +712,7 @@
                 </a>
               </div>
             </div>
-            <!--==================== PORTFOLIO 2 ====================-->
 
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="assets/img/portafolio/order-summary-card.jpg"
-                alt="Order summary card"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Order Summary Card</h3>
-                <p class="portfolio__description">
-                  Diseño adaptable para cualquier tipo de dispositivo
-                </p>
-                <a
-                  href="https://arturo0427.github.io/order_summary_card/"
-                  class="button button--flex-button--small portfolio__button"
-                  target="_blank"
-                >
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
             <!--==================== PORTFOLIO 3 ====================-->
             <div class="portfolio__content grid swiper-slide">
               <img
@@ -721,7 +723,7 @@
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Gif Expert App</h3>
                 <p class="portfolio__description">
-                  Aplicación web para buscar gifs haciendo uso de API
+                  Aplicación web para buscar gifs haciendo uso de API.
                 </p>
                 <a
                   href="https://arturo0427.github.io/gif-app-react/"
@@ -743,7 +745,7 @@
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Encriptador de texto</h3>
                 <p class="portfolio__description">
-                  Aplicación para encriptar texto
+                  Aplicación para encriptar texto.
                 </p>
                 <a
                   href="https://arturo0427.github.io/encriptador-de-texto/"
@@ -766,7 +768,7 @@
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Generador de consejos</h3>
                 <p class="portfolio__description">
-                  Aplicación que genera consejos desde una API
+                  Aplicación que genera consejos desde una API.
                 </p>
                 <a
                   href="https://arturo0427.github.io/advice-generator-app/"
@@ -829,17 +831,27 @@
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="" class="contact__label">Nombre</label>
-                <input required type="text" name="name" class="contact__input" />
+                <input
+                  required
+                  type="text"
+                  name="name"
+                  class="contact__input"
+                />
               </div>
               <div class="contact__content">
                 <label for="" class="contact__label">Email</label>
-                <input required type="email" name="email" class="contact__input" />
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  class="contact__input"
+                />
               </div>
             </div>
             <div class="contact__content">
               <label for="" class="contact__label">Mensaje</label>
               <textarea
-              required
+                required
                 name="message"
                 cols="0"
                 rows="7"
